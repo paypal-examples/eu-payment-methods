@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>European Payment Methods</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+  </head>
+
+  <body>
+  
+    <div class="container pt-5">
+      <div class="col-md-6 offset-md-3">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+          <!-- PayPal Start -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingPayPal">
+              <button
+                class="accordion-button p-2 collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsePayPal"
+                aria-expanded="false"
+                aria-controls="flush-collapsePayPal"
+              >
+              <!-- PayPal Mark -->
+                <span id="paypal-mark"></span>
+                <span class="ms-2">PayPal</span>
+              </button>
+            </h2>
+            <div
+              id="flush-collapsePayPal"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingPayPal"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body p-0 pt-3 pb-2">
+                <!-- PayPal Button -->
+                <div id="paypal-btn"></div>
+              </div>
+            </div>
+          </div>
+          <!-- PayPal End -->
+
+          <!-- iDEAL Start -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingIdeal">
+              <button
+                class="accordion-button p-2 collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseIdeal"
+                aria-expanded="false"
+                aria-controls="flush-collapseIdeal"
+              >
+                <!-- iDEAL Mark -->
+                <span id="ideal-mark"></span>
+                <span class="ms-2">iDEAL</span>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseIdeal"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingIdeal"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body p-0 pt-3 pb-3">
+                <!-- iDEAL Fields -->
+                <div id="ideal-container"></div>
+                <!-- iDEAL Button -->
+                <div id="ideal-btn"></div>
+              </div>
+            </div>
+          </div>
+          <!-- iDEAL End -->
+
+          <!-- Sofort Start -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSofort">
+              <button
+                class="accordion-button p-2 collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSofort"
+                aria-expanded="false"
+                aria-controls="flush-collapseSofort"
+              >
+                <!-- Sofort Mark -->
+                <span id="sofort-mark"></span>
+                <span class="ms-2">Sofort</span>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseSofort"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingSofort"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body p-0 pt-3 pb-3">
+                  <!-- Sofort Fields -->
+                <div id="sofort-container"></div>
+                <!-- Sofort Button -->
+                <div id="sofort-btn"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Sofort End -->
+
+          <!-- Giropay Start -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingGiropay">
+              <button
+                class="accordion-button p-2 collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseGiropay"
+                aria-expanded="false"
+                aria-controls="flush-collapseGiropay"
+              >
+                <span id="giropay-mark"></span>
+                <span class="ms-2">Giropay</span>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseGiropay"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingGiropay"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body p-0 pt-3 pb-3">
+                <div id="giropay-container"></div>
+                <div id="giropay-btn"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Giropay End -->
+
+          <!-- P24 Start -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingp24">
+              <button
+                class="accordion-button p-2 collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsep24"
+                aria-expanded="false"
+                aria-controls="flush-collapsep24"
+              >
+                <!-- P24 Mark -->
+                <span id="p24-mark"></span>
+                <span class="ms-2">P24</span>
+              </button>
+            </h2>
+            <div
+              id="flush-collapsep24"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingp24"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body p-0 pt-3 pb-3">
+                <!-- P24 Fields -->
+                <div id="p24-container"></div>
+                <!-- P24 Button -->
+                <div id="p24-btn"></div>
+              </div>
+            </div>
+          </div>
+          <!-- P24 End -->
+
+          <!-- Trustly Start -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingpTrustly">
+              <button
+                class="accordion-button p-2 collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsepTrustly"
+                aria-expanded="false"
+                aria-controls="flush-collapsepTrustly"
+              >
+                <span id="trustly-mark"></span>
+                <span class="ms-2">Trustly</span>
+              </button>
+            </h2>
+            <div
+              id="flush-collapsepTrustly"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingpTrustly"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body p-0 pt-3 pb-3">
+                <!-- Trustly Fields -->
+                <div id="trustly-container"></div>
+                <!-- Trustly Button -->
+                <div id="trustly-btn"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Trustly End -->
+
+          <!-- Bancontact Start -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingpBancontact">
+              <button
+                class="accordion-button p-2 collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsepBancontact"
+                aria-expanded="false"
+                aria-controls="flush-collapsepBancontact"
+              >
+              <!-- Bancontact Mark -->
+                <span id="bancontact-mark"></span>
+                <span class="ms-2">Bancontact</span>
+              </button>
+            </h2>
+            <div
+              id="flush-collapsepBancontact"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingpBancontact"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body p-0 pt-3 pb-3">
+                <!-- Bancontact Fields -->
+                <div id="bancontact-container"></div>
+                <!-- Bancontact Button -->
+                <div id="bancontact-btn"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Bancontact End -->
+
+          <!-- MyBank Start -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingpMyBank">
+              <button
+                class="accordion-button p-2 collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsepMyBank"
+                aria-expanded="false"
+                aria-controls="flush-collapsepMyBank"
+              >
+                <span id="mybank-mark"></span>
+                <span class="ms-2">MyBank</span>
+              </button>
+            </h2>
+            <div
+              id="flush-collapsepMyBank"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingpMyBank"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body p-0 pt-3 pb-3">
+                <!-- MyBank Fields -->
+                <div id="mybank-container"></div>
+                <!-- MyBank Button -->
+                <div id="mybank-btn"></div>
+              </div>
+            </div>
+          </div>
+          <!-- MyBank End -->
+
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AfPbdUbV4LJdK0-0B0QPeUyHnzGgVhIwZfBO3wYRoazaSYRJAIKwwHnfI0EbekJB42FJuVi-3-vgsQvi&components=buttons,fields,marks,funding-eligibility&enable-funding=ideal,sofort,giropay,p24,trustly,bancontact,mybank&currency=EUR"></script>
+    <script
+      src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
+      async
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
