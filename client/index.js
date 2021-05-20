@@ -217,7 +217,7 @@ paypal
   })
   .render("#p24-container");
 
-var p24Button = paypal
+paypal
   .Buttons({
     fundingSource: paypal.FUNDING.P24,
     style: {
