@@ -10,15 +10,12 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
-
   </head>
 
   <body>
-  
     <div class="container pt-5">
       <div class="col-md-6 offset-md-3">
         <div class="accordion accordion-flush" id="accordionFlushExample">
-
           <!-- PayPal Start -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingPayPal">
@@ -30,7 +27,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapsePayPal"
               >
-              <!-- PayPal Mark -->
+                <!-- PayPal Mark -->
                 <span id="paypal-mark"></span>
                 <span class="ms-2">PayPal</span>
               </button>
@@ -104,7 +101,7 @@
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body p-0 pt-3 pb-3">
-                  <!-- Sofort Fields -->
+                <!-- Sofort Fields -->
                 <div id="sofort-container"></div>
                 <!-- Sofort Button -->
                 <div id="sofort-btn"></div>
@@ -216,7 +213,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapsepBancontact"
               >
-              <!-- Bancontact Mark -->
+                <!-- Bancontact Mark -->
                 <span id="bancontact-mark"></span>
                 <span class="ms-2">Bancontact</span>
               </button>
@@ -248,6 +245,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapsepMyBank"
               >
+                <!-- MyBank Fields -->
                 <span id="mybank-mark"></span>
                 <span class="ms-2">MyBank</span>
               </button>
@@ -268,6 +266,37 @@
           </div>
           <!-- MyBank End -->
 
+          <!-- EPS Start -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingpEps">
+              <button
+                class="accordion-button p-2 collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsepEps"
+                aria-expanded="false"
+                aria-controls="flush-collapsepEps"
+              >
+                <!-- EPS Fields -->
+                <span id="eps-mark"></span>
+                <span class="ms-2">EPS</span>
+              </button>
+            </h2>
+            <div
+              id="flush-collapsepEps"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingpEps"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body p-0 pt-3 pb-3">
+                <!-- EPS Fields -->
+                <div id="eps-container"></div>
+                <!-- EPS Button -->
+                <div id="eps-btn"></div>
+              </div>
+            </div>
+          </div>
+          <!-- EPS End -->
         </div>
       </div>
     </div>
@@ -277,7 +306,7 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
-    <script src="https://www.paypal.com/sdk/js?client-id=AfPbdUbV4LJdK0-0B0QPeUyHnzGgVhIwZfBO3wYRoazaSYRJAIKwwHnfI0EbekJB42FJuVi-3-vgsQvi&components=buttons,fields,marks,funding-eligibility&enable-funding=ideal,sofort,giropay,p24,trustly,bancontact,mybank&currency=EUR"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AfPbdUbV4LJdK0-0B0QPeUyHnzGgVhIwZfBO3wYRoazaSYRJAIKwwHnfI0EbekJB42FJuVi-3-vgsQvi&components=buttons,fields,marks,funding-eligibility&enable-funding=ideal,sofort,giropay,p24,trustly,bancontact,mybank,eps&currency=EUR"></script>
     <script
       src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
       async
