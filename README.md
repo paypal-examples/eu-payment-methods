@@ -2,10 +2,10 @@
 
 See a [hosted version](https://paypal-eu-payment-methods.herokuapp.com/) of the example
 
-Example integration with various european payment methods
+Example integration with payment methods
 
 
-PayPal, iDEAL, Sofort, Giropay, P24, Trustly, Bancontact, Mybank, Eps
+PayPal, iDEAL, Sofort, Giropay, P24, Bancontact, Mybank, Eps
 
 ### How to run locally
 
