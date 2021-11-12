@@ -53,8 +53,7 @@ paypal
   })
   .render("#ideal-mark");
 
-paypal
-  .Fields({
+paypal.PaymentFields({
     fundingSource: paypal.FUNDING.IDEAL,
   })
   .render("#ideal-container");
@@ -103,7 +102,7 @@ paypal
   .render("#sofort-mark");
 
 paypal
-  .Fields({
+  .PaymentFields({
     fundingSource: paypal.FUNDING.SOFORT,
   })
   .render("#sofort-container");
@@ -152,9 +151,9 @@ paypal
   .render("#giropay-mark");
 
 paypal
-  .Fields({
+  .PaymentFields({
     fundingSource: paypal.FUNDING.GIROPAY,
-    fields: {
+    PaymentFields: {
       name: {
         value: "",
       },
@@ -206,9 +205,9 @@ paypal
   .render("#p24-mark");
 
 paypal
-  .Fields({
+  .PaymentFields({
     fundingSource: paypal.FUNDING.P24,
-    fields: {
+    PaymentFields: {
       name: {
         value: "",
       },
@@ -261,9 +260,9 @@ paypal
   .render("#bancontact-mark");
 
 paypal
-  .Fields({
+  .PaymentFields({
     fundingSource: paypal.FUNDING.BANCONTACT,
-    fields: {
+    PaymentFields: {
       name: {
         value: "",
       },
@@ -315,9 +314,9 @@ paypal
   .render("#mybank-mark");
 
 paypal
-  .Fields({
+  .PaymentFields({
     fundingSource: paypal.FUNDING.MYBANK,
-    fields: {
+    PaymentFields: {
       name: {
         value: "",
       },
@@ -370,7 +369,7 @@ paypal
   .render('#eps-mark')
 
 paypal
-  .Fields({
+  .PaymentFields({
     fundingSource: paypal.FUNDING.EPS,
     fields: {
       name: {
